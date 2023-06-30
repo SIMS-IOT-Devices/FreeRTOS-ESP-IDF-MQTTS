@@ -1,0 +1,4 @@
+Commands:
+
+mosquitto_sub -h test.mosquitto.org -t "my_topic" -p 8883 --cafile mosquitto.org.crt --key client.key --cert client.crt -d
+mosquitto_pub --cafile mosquitto.org.crt --key client.key --cert client.crt -h test.mosquitto.org -m "Hello World ......." -t "my_topic" -p 8883 -d
